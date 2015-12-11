@@ -1,18 +1,26 @@
 {
   "name": "static-http-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A static http server",
-  "author": "keelii",
+  "author": "keelii <longster@gmail.com>",
   "license": "MIT",
   "main": "index.js",
-  "description": "WOW - Ultimate component based gulp workflow",
   "bin": {
     "shs": "bin/shs.js"
   },
+  "keywords": [
+    "static",
+    "http",
+    "server"
+  ],
   "dependencies": {
     "minimist": "^1.2.0",
     "finalhandler": "^0.4.0",
     "serve-index": "^1.7.2",
     "serve-static": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devfe/static-http-server.git"
   }
 }
