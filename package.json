@@ -1,7 +1,8 @@
 {
   "name": "static-http-server",
-  "version": "0.0.2",
-  "description": "A static http server",
+  "version": "0.0.3",
+  "homepage": "https://github.com/devfe/static-http-server",
+  "description": "A static http server.",
   "author": "keelii <longster@gmail.com>",
   "license": "MIT",
   "main": "index.js",
