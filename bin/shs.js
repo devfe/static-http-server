@@ -6,8 +6,12 @@ var server = require('../index.js');
 
 var rootDir = argv._[0] || process.cwd();
 var PORT = argv.port || 1024;
+var version = require('../package.json').version;
 
 if ( rootDir ) {
+    if ( argv.v ) return console.log(version);
+    if ( argv.h ) return console.log('shs <path> <--port=8080>');
+
     var isDir = fs.lstatSync(rootDir).isDirectory();
 
     if ( isDir ) {

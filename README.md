@@ -1,4 +1,5 @@
 Yet another static http server
+-----
 
 # Install
 
