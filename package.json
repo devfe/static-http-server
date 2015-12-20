@@ -1,9 +1,9 @@
 {
   "name": "static-http-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/devfe/static-http-server",
   "description": "A static http server.",
-  "author": "keelii <longster@gmail.com>",
+  "author": "keelii <keeliizhou@gmail.com>",
   "license": "MIT",
   "main": "index.js",
   "bin": {
