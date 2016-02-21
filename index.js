@@ -3,8 +3,10 @@ var finalhandler = require('finalhandler');
 var serveIndex   = require('serve-index');
 var serveStatic  = require('serve-static');
 
-module.exports = function(rootDir, config) {
+module.exports = function(rootDir, config, callback) {
+    callback = callback || function() {};
     rootDir = rootDir || process.cwd();
+    var nolog = config.nolog || false;
     var index = serveIndex(rootDir, {
         icons: true,
         hidden: true
@@ -28,6 +30,10 @@ module.exports = function(rootDir, config) {
     var banner = '\n--------------------------------------\n >>> Server is listen on port: ' + config.port + '\n--------------------------------------\n';
 
     // Listen
-    server.listen(config.port);
-    console.log(banner);
+    server.listen(config.port, function() {
+        if (!nolog) {
+            console.log(banner);
+        }
+        callback(null, server);
+    });
 };

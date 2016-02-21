@@ -1,6 +1,6 @@
 {
   "name": "static-http-server",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/devfe/static-http-server",
   "description": "A static http server.",
   "author": "keelii <keeliizhou@gmail.com>",
